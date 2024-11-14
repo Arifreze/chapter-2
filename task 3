@@ -1,0 +1,18 @@
+//task 3
+import java .util.Scanner;
+public class ArithmeticProg{
+    public static void main(String[]args){
+         
+        int yearrn = 2024;//masukkan tahun
+        int birthday;
+        int age;
+        Scanner Hadir = new Scanner(System.in);
+         System.out.print("Enter your birthday :");
+         birthday = Hadir.nextInt();
+         age = yearrn - birthday;//formula utk dpt tahun
+         System.out.println("your age ="+age);
+         
+                 
+               
+    }
+}
