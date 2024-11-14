@@ -1,0 +1,18 @@
+
+import java.util.Scanner;
+public class ArithmeticProg{
+    public static void main(String[]args){
+        int weight;
+        //kene pakai float sbb height dlm meter dan meter ad point
+        float height;
+        float bmi;//bmi ada point jadi kene ada float
+        Scanner Hadir = new Scanner(System.in);
+        System.out.print("Enter your weight in kg:");
+        weight = Hadir.nextInt();
+        System.out.print("Enter your height in m:");
+        height = Hadir.nextFloat();//float sbb point
+        bmi = weight / (height * height);
+        System.out.println("Your bmi is :"+bmi);
+        
+    }
+}
