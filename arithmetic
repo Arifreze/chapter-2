@@ -1,0 +1,38 @@
+//task 1
+//utk import scanner ke dlm java
+import java.util.Scanner;
+
+public class ArithmeticProg{
+    public static void main(String[]args){
+        //nak declare integer
+        int nom1, nom2, sum, sub, mult, div, mod, inc ,decr;
+        Scanner Hadir = new Scanner(System.in);
+        //suruh user masukkan nombor
+         System.out.print("enter no 1:");
+        nom1 = Hadir.nextInt();
+         System.out.print("enter no 2:");
+        nom2 = Hadir.nextInt();
+        
+      //formula arithmetic
+        sum = nom1 + nom2;
+        sub = nom1 - nom2;
+        mult = nom1 * nom2;
+        div = nom1 / nom2;
+        mod = nom1 % nom2;//modulud formula
+       //hasil output
+        System.out.println("nom1 ="+nom1);
+        System.out.println("nom2 ="+nom2);
+        System.out.println("sum for nom1 & nom2 ="+sum);
+        System.out.println("sub for nom1 & nom2 ="+sub);
+        System.out.println("mult for nom1 & nom2 ="+mult);
+        System.out.println("div for nom1 & nom2 ="+div);
+        System.out.println("mod for nom1 & nom2 ="+mod);
+        //formula increment dan decrement
+        inc = ++nom1;
+        decr = --nom2;
+        
+        System.out.println("inc for nom1 ="+inc);
+        System.out.println("decr for nom2 ="+decr);
+        
+    }
+}
