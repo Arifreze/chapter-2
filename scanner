@@ -1,0 +1,28 @@
+//task 2
+import java.util.Scanner;
+public class ArithmeticProg{
+    public static void main(String[]args){
+        //declare variable
+        String name;
+        int age;
+        String hobby;
+        String fav;
+        //create scanner
+        Scanner Hadir = new Scanner(System.in);
+        System.out.print("Enter name :");
+        name = Hadir.nextLine();//read user input
+        System.out.print("Enter age :");
+        age = Hadir.nextInt();
+        Hadir.nextLine();//sbb tadi dia baca int jadi kene panggil balik biar dia baca string
+        System.out.print("Enter hobby :");
+        hobby = Hadir.nextLine();
+        System.out.print("Enter fav food :");
+         fav = Hadir.nextLine();
+         //output 
+         System.out.println("name :"+name);
+         System.out.println("age :"+age);
+         System.out.println("hobby :"+hobby);
+         System.out.println("fav food :"+fav);
+         
+    }
+}
