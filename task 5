@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class ArithmeticProg{
+    public static void main(String[]args){
+        String name;
+        int price;
+        int quantity;
+        int discount;
+        int afdisc;
+        int total;
+        Scanner Hadir = new Scanner(System.in);
+        System.out.print("Enter product name :");
+        name = Hadir.nextLine();
+        System.out.print("Enter product price:");
+        price = Hadir.nextInt();
+        System.out.print("Enter quantity :");
+        quantity = Hadir.nextInt();
+        System.out.print("Enter discouunt rate :");
+        discount =  Hadir.nextInt();
+        total = price  * quantity;//guna ni sbb nak dpt total price
+        afdisc =total * (100-discount)/100 ;//formula discount
+        System.out.println("product name ="+name);
+        System.out.println("product price ="+price);
+        System.out.println("quantity ="+quantity);
+        System.out.println("discount rate ="+discount);
+        System.out.println("price after discount ="+afdisc);
+        
+          
+    }
+}
